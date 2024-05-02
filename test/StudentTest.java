@@ -56,17 +56,19 @@ public class StudentTest {
      */
 
     
- @Test
-public void testRequestGolfCar1() {
-    System.out.println("requestGolfCar");
-    Location currentLocation = new Location("buliding 460");
-    Location destinationLocation = new Location("buliding 65");
-    int numSeats = 4; // or any number of seats you want to test with
-    Student instance = new Student(11223344,"Rania");
-    Order expResult = new Order(currentLocation, destinationLocation, numSeats);
-    Order result = instance.requestGolfCar(currentLocation, destinationLocation, numSeats);
-    assertNotNull(result);
-}
+    @Test
+    public void testRequestGolfCar() {
+        System.out.println("requestGolfCar");
+        Location currentLocation = null;
+        Location destinationLocation = null;
+        int numSeats = 0;
+        Student instance = null;
+        Order expResult = null;
+        Order result = instance.requestGolfCar(currentLocation, destinationLocation, numSeats);
+        assertEquals(expResult, result);
+        // TODO review the generated test code and remove the default call to fail.
+        fail("The test case is a prototype.");
+    }
     
 
 

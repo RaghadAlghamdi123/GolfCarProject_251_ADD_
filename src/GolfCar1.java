@@ -31,7 +31,7 @@ Scanner scanner = new Scanner(System.in);
         Location current = new Location(currentLocation);
         Location dest = new Location(destination);
 
-        Order order = student.RequestGolfCar( current,dest, numberOfSeats);
+        Order order = student.requestGolfCar( current,dest, numberOfSeats);
 
         System.out.println("Order sent to driver.");
         System.out.println("Waiting for driver response...");

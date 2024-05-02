@@ -9,7 +9,7 @@ class Student extends User {
     public void cancelOrder() {
     }
     
-    public Order RequestGolfCar(Location currentLocation, Location destinationLocation, int numSeats) {
+    public Order requestGolfCar(Location currentLocation, Location destinationLocation, int numSeats) {
         currentLocation = currentLocation;
         destinationLocation = destinationLocation;
         numSeats = numSeats;
