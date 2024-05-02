@@ -1,21 +1,33 @@
 
 import java.util.Scanner;
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author aseel
- */
 public class Driver extends User {
-
     public Driver(int user_id,String name) {
               super(user_id,name);
     }
-   
+    public boolean AcceptOrRejectOrder(Order order)
+    {
+        
+        // Simulate driver interaction
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Driver: " + name);
+        System.out.println("Received Order Details:");
+        System.out.println("Number of Seats: " + order.getNumSeats());
+        System.out.println("Current Location: " + order.getCurrentLocation().getAdress());
+        System.out.println("Destination: " + order.getDestinationLocation().getAdress());
+
+        System.out.print("Accept the order? (yes/no): ");
+        String response = scanner.nextLine();
+
+        scanner.close();
+
+        return response.equalsIgnoreCase("yes");
+    
+    }
+    
+    
+    
+    // +cancellationMassage( ):void
+//ممكن تنعمل  لو تعاملت مع اوبجت اوردر يصير كانه فلاق
+
     
 }

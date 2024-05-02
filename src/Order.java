@@ -5,7 +5,6 @@ class Order {
     private Location destinationLocation;
     private String status="Accepted";
     private int numSeats;
-    
     public Order(Location currentLocation, Location destinationLocation, int numSeats) {
         this.currentLocation = currentLocation;
         this.destinationLocation = destinationLocation;
@@ -45,5 +44,25 @@ class Order {
     }
     
     
-  
+   
+    public void cancellationOrder(Boolean isCancel ){
+        if (isCancel ==true)
+        {
+          setStatus("Canceled");  
+        }
+    }
+    
+    
+    
+public static void scheduleOrder(Order order) {
+        // Implement your scheduling logic here
+        
+        // Example: Print the order details
+        System.out.println("Order details: \nNumber of Seats : " + order.getNumSeats() +
+                " \nCurrent Location : " + order.getCurrentLocation().getAdress() +
+                " \nDestination : " + order.getDestinationLocation().getAdress());
+    }
 }
+    
+  
+

@@ -1,13 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author aseel
- */
 public class FeedBack {
     private int feedback_Id;// ممكن نعمل رقم عشوائي هو عند انشاء الاوبجكت
     private String feedback;

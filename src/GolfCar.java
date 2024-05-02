@@ -24,9 +24,5 @@ class GolfCar {
     public void setPlatenum(String platenum) {
         this.platenum = platenum;
     }
-    
-    
-    
 }
-
 
